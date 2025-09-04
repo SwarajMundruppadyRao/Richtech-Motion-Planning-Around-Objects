@@ -30,6 +30,9 @@ your_workspace/
 │           └── richtech_panda.cpp # Main demo source code
 └── README.md
 ```
+## Demo Video
+
+[![Watch the demo video](https://img.youtube.com/vi/swNAFKG6tG0/0.jpg)](https://youtu.be/swNAFKG6tG0)
 
 ## Setup Instructions
 
