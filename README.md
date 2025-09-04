@@ -14,12 +14,12 @@ This project demonstrates robotic arm path planning using **ROS 2**, **MoveIt 2*
 ## Project Structure
 
 ```
-ws_richtech/
+your_workspace/
 ├── build/                # Build artifacts (colcon)
 ├── install/              # Installed packages and setup scripts
 ├── log/                  # Build and run logs
 ├── src/
-│   └── richtech_panda/
+│   └── richtech_panda/   # Paste the contents of this GitHub repo here
 │       ├── CMakeLists.txt
 │       ├── package.xml
 │       ├── config/       # MoveIt and robot config files (YAML)
@@ -30,6 +30,22 @@ ws_richtech/
 │           └── richtech_panda.cpp # Main demo source code
 └── README.md
 ```
+
+## Setup Instructions
+
+1. **Create a ROS 2 workspace of your choice:**
+   ```bash
+   mkdir -p ~/your_workspace/src
+   cd ~/your_workspace/src
+   ```
+
+2. **Create a folder named `richtech_panda` inside the `src` directory:**
+   ```bash
+   mkdir richtech_panda
+   ```
+
+3. **Paste the contents of this GitHub repository inside `src/richtech_panda`:**
+   - Copy all files and folders from the cloned repo into `~/your_workspace/src/richtech_panda`
 
 ## Requirements
 
@@ -59,19 +75,14 @@ sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers
 sudo apt install ros-humble-rviz2
 ```
 
-### 4. Clone the Repository
+### 4. Build the Workspace
 ```bash
-git clone git@github.com:SwarajMundruppadyRao/Richtech-Motion-Planning-Around-Objects.git ~/ws_richtech
-cd ~/ws_richtech
-```
-
-### 5. Build the Workspace
-```bash
+cd ~/your_workspace
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
 ```
 
-### 6. Source the Workspace
+### 5. Source the Workspace
 ```bash
 source install/setup.bash
 ```
